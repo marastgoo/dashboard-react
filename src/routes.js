@@ -23,7 +23,7 @@ const dashboardRoutes = [
   {
     path: "/dashboard",
     name: "Dashboard",
-    rtlName: "لوحة القيادة",
+    rtlName: "داشبورد",
     icon: Dashboard,
     component: DashboardPage,
     layout: "/admin"
@@ -31,7 +31,7 @@ const dashboardRoutes = [
   {
     path: "/user",
     name: "User Profile",
-    rtlName: "ملف تعريفي للمستخدم",
+    rtlName: "پروفایل کاربران",
     icon: Person,
     component: UserProfile,
     layout: "/admin"
@@ -39,7 +39,7 @@ const dashboardRoutes = [
   {
     path: "/table",
     name: "Table List",
-    rtlName: "قائمة الجدول",
+    rtlName: "لیست کاربران",
     icon: "content_paste",
     component: TableList,
     layout: "/admin"
@@ -47,7 +47,7 @@ const dashboardRoutes = [
   {
     path: "/typography",
     name: "Typography",
-    rtlName: "طباعة",
+    rtlName: "تایپوگرافی",
     icon: LibraryBooks,
     component: Typography,
     layout: "/admin"
@@ -55,7 +55,7 @@ const dashboardRoutes = [
   {
     path: "/icons",
     name: "Icons",
-    rtlName: "الرموز",
+    rtlName: "آیکن ها",
     icon: BubbleChart,
     component: Icons,
     layout: "/admin"
@@ -63,7 +63,7 @@ const dashboardRoutes = [
   {
     path: "/maps",
     name: "Maps",
-    rtlName: "خرائط",
+    rtlName: "نقشه ها",
     icon: LocationOn,
     component: Maps,
     layout: "/admin"
@@ -71,7 +71,7 @@ const dashboardRoutes = [
   {
     path: "/notifications",
     name: "Notifications",
-    rtlName: "إخطارات",
+    rtlName: "اطلاعیه ها",
     icon: Notifications,
     component: NotificationsPage,
     layout: "/admin"
@@ -79,7 +79,7 @@ const dashboardRoutes = [
   {
     path: "/upgrade-to-pro",
     name: "Upgrade To PRO",
-    rtlName: "التطور للاحترافية",
+    rtlName: "ارتقا به حرفه ای",
     icon: Unarchive,
     component: UpgradeToPro,
     layout: "/admin"
