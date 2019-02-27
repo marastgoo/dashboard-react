@@ -25,8 +25,8 @@ const dashboardRoutes = [
     name: "Dashboard",
     rtlName: "داشبورد",
     icon: Dashboard,
-    component: DashboardPage,
-    layout: "/admin"
+    component: RTLPage,
+    layout: "/rtl"
   },
   {
     path: "/user",
@@ -34,7 +34,7 @@ const dashboardRoutes = [
     rtlName: "پروفایل کاربران",
     icon: Person,
     component: UserProfile,
-    layout: "/admin"
+    layout: "/rtl"
   },
   {
     path: "/table",
@@ -42,15 +42,16 @@ const dashboardRoutes = [
     rtlName: "لیست کاربران",
     icon: "content_paste",
     component: TableList,
-    layout: "/admin"
+    layout: "/rtl"
   },
+  
   {
     path: "/typography",
     name: "Typography",
     rtlName: "تایپوگرافی",
     icon: LibraryBooks,
     component: Typography,
-    layout: "/admin"
+    layout: "/rtl"
   },
   {
     path: "/icons",
@@ -58,7 +59,7 @@ const dashboardRoutes = [
     rtlName: "آیکن ها",
     icon: BubbleChart,
     component: Icons,
-    layout: "/admin"
+    layout: "/rtl"
   },
   {
     path: "/maps",
@@ -66,7 +67,7 @@ const dashboardRoutes = [
     rtlName: "نقشه ها",
     icon: LocationOn,
     component: Maps,
-    layout: "/admin"
+    layout: "/rtl"
   },
   {
     path: "/notifications",
@@ -74,7 +75,7 @@ const dashboardRoutes = [
     rtlName: "اطلاعیه ها",
     icon: Notifications,
     component: NotificationsPage,
-    layout: "/admin"
+    layout: "/rtl"
   },
   {
     path: "/upgrade-to-pro",
@@ -82,7 +83,7 @@ const dashboardRoutes = [
     rtlName: "ارتقا به حرفه ای",
     icon: Unarchive,
     component: UpgradeToPro,
-    layout: "/admin"
+    layout: "/rtl"
   },
   {
     path: "/rtl-page",

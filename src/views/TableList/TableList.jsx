@@ -8,7 +8,37 @@ import Table from "components/Table/Table.jsx";
 import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
+import ReactTable from "react-table";
+import "react-table/react-table.css";
+import matchSorter from 'match-sorter'
 
+
+const data = [{
+      name: 'Roy Agasthyan',
+      age: 26
+    },{
+      name: 'Sam Thomason',
+      age: 22
+    },{
+      name: 'Michael Jackson',
+      age: 36
+    },{
+      name: 'Samuel Roy',
+      age: 56
+    },{
+      name: 'Rima Soy',
+      age: 28
+    },{
+      name: 'Suzi Eliamma',
+      age: 28
+    }]
+const columns = [{
+    Header: 'Name',
+    accessor: 'name'
+  },{
+    Header: 'Age',
+    accessor: 'age'
+  }]
 const styles = {
   cardCategoryWhite: {
     "&,& a,& a:hover,& a:focus": {
@@ -42,7 +72,31 @@ const styles = {
 function TableList(props) {
   const { classes } = props;
   return (
+    <div>
+
     <GridContainer>
+    <GridItem xs={12} sm={12} md={12}>
+      <Card>
+        <CardHeader color="primary">
+          <h4 className={classes.cardTitleWhite}>جدول react</h4>
+          <p className={classes.cardCategoryWhite}>
+            جدول با قابلیت مرتب سازی و جستجو و صفحه بندی
+          </p>
+        </CardHeader>
+        <CardBody>
+        <ReactTable
+            data={data}
+            filterable
+
+            columns={columns}
+            defaultPageSize = {3}
+            pageSizeOptions = {[3, 6]}
+          />
+
+        </CardBody>
+      </Card>
+    </GridItem>
+
       <GridItem xs={12} sm={12} md={12}>
         <Card>
           <CardHeader color="primary">
@@ -52,6 +106,7 @@ function TableList(props) {
             </p>
           </CardHeader>
           <CardBody>
+
             <Table
               tableHeaderColor="primary"
               tableHead={["Name", "Country", "City", "Salary"]}
@@ -106,6 +161,7 @@ function TableList(props) {
         </Card>
       </GridItem>
     </GridContainer>
+    </div>
   );
 }
 
