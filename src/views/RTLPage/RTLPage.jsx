@@ -33,6 +33,35 @@ import CardIcon from "components/Card/CardIcon.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 import SnackbarContent from "components/Snackbar/SnackbarContent.jsx";
+import {Doughnut} from 'react-chartjs-2';
+import {Line} from 'react-chartjs-2';
+
+
+
+const data = {
+	labels: [
+		'Red',
+		'Green',
+		'Yellow'
+	],
+	datasets: [{
+		data: [300, 50, 100],
+		backgroundColor: [
+		'#FF6384',
+		'#36A2EB',
+		'#FFCE56'
+		],
+		hoverBackgroundColor: [
+		'#FF6384',
+		'#36A2EB',
+		'#FFCE56'
+		]
+	}]
+};
+
+
+
+
 
 import {
   dailySalesChart,
@@ -75,6 +104,7 @@ class RTLPage extends React.Component {
     const { classes } = this.props;
     return (
       <div>
+
         <GridContainer>
           <GridItem xs={12} sm={6} md={3}>
             <Card>
@@ -363,6 +393,16 @@ class RTLPage extends React.Component {
                 </Button>
               </CardBody>
             </Card>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={6}>
+          <Card>
+          <CardHeader  color="primary">
+          <h3>نمودار دونات</h3>
+          </CardHeader>
+          <CardBody>
+          <Doughnut data={data} />
+          </CardBody>
+          </Card>
           </GridItem>
         </GridContainer>
       </div>

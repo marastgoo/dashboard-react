@@ -44,7 +44,7 @@ const dashboardRoutes = [
     component: TableList,
     layout: "/rtl"
   },
-  
+
   {
     path: "/typography",
     name: "Typography",
