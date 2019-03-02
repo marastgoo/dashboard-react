@@ -18,6 +18,7 @@ import NotificationsPage from "views/Notifications/Notifications.jsx";
 import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.jsx";
 // core components/views for RTL layout
 import RTLPage from "views/RTLPage/RTLPage.jsx";
+import Signin from "views/SignIn/SignIn.jsx"
 
 const dashboardRoutes = [
   {
@@ -78,20 +79,12 @@ const dashboardRoutes = [
     layout: "/rtl"
   },
   {
-    path: "/upgrade-to-pro",
-    name: "Upgrade To PRO",
-    rtlName: "ارتقا به حرفه ای",
-    icon: Unarchive,
-    component: UpgradeToPro,
-    layout: "/rtl"
-  },
-  {
-    path: "/rtl-page",
-    name: "RTL Support",
-    rtlName: "پشتیبانی از راست به چپ",
+    path: "/login",
+    name: "login",
+    rtlName: "صفحه لاگین",
     icon: Language,
-    component: RTLPage,
-    layout: "/rtl"
+    component: Signin,
+    layout: ""
   }
 ];
 
